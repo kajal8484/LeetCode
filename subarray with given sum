@@ -1,0 +1,25 @@
+  int start=0;
+   Map<Integer,Integer> map=new HashMap<>();
+   int currSum=0;
+   ArrayList<Integer> list=new ArrayList<>();
+   
+       for(int i=0;i<n;i++)
+       {
+    	   currSum+=arr[i];
+    	   if(currSum==s)
+    	   {
+    		   list.add(0);
+    		   list.add(i);
+    		   return list;
+    	   }
+    	   if(map.containsKey(currSum-s))
+    	   {
+    		   list.add(map.get(currSum-s)+1);
+    		   list.add(i);
+    		   return list;
+    	   }
+    	   map.put(currSum, i);
+       }
+       list.add(-1);
+    	   return list;
+    	   
