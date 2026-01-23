@@ -1,3 +1,4 @@
+
 class Solution {
     public int search(int[] nums, int target) {
         int length=nums.length;
@@ -28,4 +29,5 @@ right=mid-1;
         }
 return -1;
     }
+
 }
