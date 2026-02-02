@@ -1,4 +1,5 @@
 
+
 class Solution {
     public int search(int[] nums, int target) {
         int length=nums.length;
@@ -31,3 +32,4 @@ return -1;
     }
 
 }
+
