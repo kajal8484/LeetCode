@@ -1,6 +1,5 @@
 
 public class LeetCodeTwoSum {
-
 	    public  static int[]  twoSum(int[] numbers, int target) {
 	 int [] arr = new int[2];
 	    int a = 0;
@@ -36,3 +35,4 @@ public class LeetCodeTwoSum {
 	    }
 		
 }
+
